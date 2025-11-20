@@ -175,9 +175,9 @@ public class ConsoleBD {
             stmt.setString(1, descricao);
             stmt.setInt(2, preco);
             stmt.executeUpdate();
-            System.out.println("✅ Paciente salvo com sucesso!");
+            System.out.println("✅ Produto salvo com sucesso!");
         } catch (SQLException e) {
-            System.out.println("❌❌❌❌ Erro ao salvar paciente: " + e.getMessage());
+            System.out.println("❌ Erro ao salvar produto: " + e.getMessage());
         }
     }
 
